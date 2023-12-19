@@ -12,9 +12,10 @@
                          width="100%" height="280">
                     <div class="card-body">
                         <h5 class="card-title">{{item.name}}</h5>
-                        <p class="card-text">{{item.description}}</p>
+                        <p class="card-text"><strong>Autor:</strong>&nbsp;{{item.autor}}</p>
+                        <p class="card-text"><strong>Edición:</strong>&nbsp;{{item.description}}</p>
                         <div class="d-flex justify-content-between align-items-center">
-                            <small class="text-body-secondary">{{item.time}} </small>
+                            <small class="text-body-secondary"><i>{{item.time}}</i></small>
                             <div class="btn-group">
                                 <button type="button" class="btn btn-sm btn-outline-warning" 
                                 data-bs-toggle="modal" data-bs-target="#exampleModal" (click)="selectItem(item)">&nbsp; Editar &nbsp;
@@ -54,6 +55,12 @@
                       <input type="text" class="form-control btn-sm" formControlName="description">
                     </div>
                 </div>
+                <div class="mb-3 row">
+                  <label class="col-sm-2 col-form-label">Autor</label>
+                  <div class="col-sm-10">
+                    <input type="text" class="form-control btn-sm" formControlName="autor">
+                  </div>
+              </div>
                 <div class="mb-3 row">
                     <label class="col-sm-2 col-form-label">Año</label>
                     <div class="col-sm-10">

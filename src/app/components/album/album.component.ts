@@ -20,6 +20,7 @@ export class AlbumComponent {
       id: new FormControl(null),
       name: new FormControl(''),
       description: new FormControl(''),
+      autor: new FormControl(''),
       time: new FormControl(''),
       image: new FormControl(''),
       status: new FormControl(true),
